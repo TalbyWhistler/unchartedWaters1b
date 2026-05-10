@@ -31,13 +31,28 @@
             $message="Commodity data for " .$city. " uploaded. ";
             // DB OPERATIONS here?
 
+
         }
         else 
             {
                 $status='Error';
                 $message='Payload missing';
             }
-        
+     
+    ob_start();
+    include 'php/dbConnect.php';
+    $dbConnect=ob_get_clean();
+    
+    if ($dbConnect)
+        {
+            $message='Database connected';
+        }
+        else 
+            {
+                $status='Error';
+                $message='Database connect fail.';
+            }
+    
     //$status='Ok';
 
     //$operation='hey noe';

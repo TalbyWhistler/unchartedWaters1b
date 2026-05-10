@@ -25,7 +25,7 @@ if ($conn->connect_error)
         }
 
 
-echo "true";
+//echo "true";
 
 
 ?>
