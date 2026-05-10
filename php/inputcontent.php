@@ -19,11 +19,11 @@
                 </br>
                 <input type="text" name="sellingPrice" id="sellingPrice">
                 </br>
-            <button id="formButton" onclick="handleInput()">Submit</button>
+            <button id="formButton" onclick="handleCommodityInput()">Submit</button>
         
     </div>
     ';
-    
+
     echo $output;
 
 
